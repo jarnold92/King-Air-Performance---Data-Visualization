@@ -1,4 +1,4 @@
-title: Course Title Here
-description: A description of the course.
+title: King Air Performance - Data Visualization
+description: Using Matplotlib, the cruise performance of the King Air C90Gti will be plotted to gain an understanding of how performance changes with altitude
 programming_language: python
 from: python-base-prod:21
