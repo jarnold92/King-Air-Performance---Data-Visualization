@@ -36,6 +36,15 @@ True Airspeed 'TAS' on the Y-axis.
 
 
 `@hint`
+-For a weight of 8500 and temperature of -40, this would be coded as 
+data["Weight"] == 8500) & (data["TMP"] == -40)
+
+-for a plot color of black, inside the plt.plot command there would be
+a parameter of color='black'
+
+-if 5% margins were desired, the plt.margins(0.05) we be correct.
+
+-Dont forget the plt.show() command to display the plot!
 
 `@pre_exercise_code`
 import pandas as pd
