@@ -24,7 +24,7 @@ King Air cruise performance at different altitudes?
 
 -Filter the data for Weight of 9500lbs, and temperature (TMP) of -20, 0 and 20 degrees.
 
--Build a line chart, with the cold data drawn with color 'blue', cool data in 'green', and
+-Build a line plot, with the cold data drawn with color 'blue', cool data in 'green', and
 warm data drawn with 'red'.
 
 -Always label your graphs!  We are plotting 'Pressure Altitude' on the X-Axis and
@@ -47,17 +47,16 @@ a parameter of color='black'
 -Dont forget the plt.show() command to display the plot!
 
 `@pre_exercise_code`
+
+
+`@sample_code`
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-FNAME = 'kingair cruise.csv'
-
 # read datafile
-data = pd.read_csv(FNAME)
+data = pd.read_csv('kingair cruise.csv')
 
-
-`@sample_code`
 # filter by weight = 9500, and for -20, 0, and 20 degree temperatures
 heavy_cold = data.loc[(data["Weight"] == ----) & (data["TMP"] == ---)]
 heavy_cool = data.loc[(data["Weight"] == ----) & (data["TMP"] == ---)]
@@ -82,6 +81,13 @@ plt.legend(('ISA -20', 'ISA', 'ISA +20'))
 
 
 `@solution`
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# read datafile
+data = pd.read_csv('kingair cruise.csv')
+
 # filter by weight = 9500, and for -20, 0, and 20 degree temperatures
 heavy_cold = data.loc[(data["Weight"] == 9500) & (data["TMP"] == -20)]
 heavy_cool = data.loc[(data["Weight"] == 9500) & (data["TMP"] == 0)]
