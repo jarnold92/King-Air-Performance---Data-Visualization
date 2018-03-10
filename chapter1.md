@@ -14,7 +14,7 @@ key: 5c3eca1ae9
 ```
 This exercise will show you how to plot three line plots, overlayed on one grid. We
 will use the King Air C90GTi cruise data which has been extracted from the POH and 
-pre-loaded for you in a DataFrame 'data'.  All libraries (Pandas, Matplotlib, Seaborn)
+pre-loaded for you in a DataFrame _'data'_.  All libraries (Pandas, Matplotlib, Seaborn)
 have also been imported for you.
 
 After plotting the graph, inspect your results!  What does the plot tell you about the 
@@ -22,17 +22,17 @@ King Air cruise performance at different altitudes?
 
 `@instructions`
 
--Filter the data for Weight of 9500lbs, and temperature (TMP) of -20, 0 and 20 degrees.
+* Filter the data for Weight of **9500**lbs, and temperature (TMP) of **-20, 0 and 20** degrees.
 
--Build a line plot, with the cold data drawn with color 'blue', cool data in 'green', and
-warm data drawn with 'red'.
+* Build a line plot, with the cold data drawn with color _'blue'_, cool data in _'green'_, and
+warm data drawn with _'red'_.
 
--Always label your graphs!  We are plotting 'Pressure Altitude' on the X-Axis and
-True Airspeed 'TAS' on the Y-axis.
+* Always label your graphs!  We are plotting _'Pressure Altitude'_ on the X-Axis and
+True Airspeed _'TAS'_ on the Y-axis.
 
--Format the margins with 2% edges (0.02) to make the plot more readable
+* Format the margins with 2% edges (0.02) to make the plot more readable
 
--Don't forget to finish off with a plt.show() command, to actually display the plot.
+* Don't forget to finish off with a plt.show() command, to actually display the plot.
 
 
 `@hint`
@@ -55,7 +55,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # read datafile
-data = pd.read_csv('kingair cruise.csv')
+data = pd.read_csv('kingair_cruise.csv')
 
 # filter by weight = 9500, and for -20, 0, and 20 degree temperatures
 heavy_cold = data.loc[(data["Weight"] == ----) & (data["TMP"] == ---)]
