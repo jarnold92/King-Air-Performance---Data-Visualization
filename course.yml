@@ -4,4 +4,4 @@ description: Using Matplotlib, the cruise performance of the King Air C90Gti wil
 programming_language: python
 from: python-base-prod:21
 datasets:
-  kingair cruise.csv: Kingair cruise
+  kingair cruise.csv: kingair_cruise
