@@ -22,7 +22,7 @@ King Air cruise performance at different altitudes?
 
 `@instructions`
 
-* Filter the data for Weight of **9500**lbs, and temperature (TMP) of **-20, 0 and 20** degrees.
+* Filter the data for Weight of **9500** lbs, and temperature (TMP) of **-20, 0 and 20** degrees.
 
 * Build a line plot, with the cold data drawn with color _'blue'_, cool data in _'green'_, and
 warm data drawn with _'red'_.
@@ -48,8 +48,8 @@ a parameter of color='black'
 
 `@pre_exercise_code`
 import pandas as pd
-#import matplotlib.pyplot as plt
-#import seaborn as sns
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # read datafile
 data = pd.read_csv('https://s3.amazonaws.com/assets.datacamp.com/production/course_7459/datasets/kingair_cruise.csv')
