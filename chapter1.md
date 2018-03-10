@@ -12,7 +12,7 @@ xp: 100
 skills: 2
 key: 5c3eca1ae9
 ```
-The exercise will show you how to plot three line plots, overlayed on one grid. We
+This exercise will show you how to plot three line plots, overlayed on one grid. We
 will use the King Air C90GTi cruise data which has been extracted from the POH and 
 pre-loaded for you in a DataFrame 'data'.  All libraries (Pandas, Matplotlib, Seaborn)
 have also been imported for you.
