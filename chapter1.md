@@ -55,7 +55,6 @@ import pandas as pd
 data = pd.read_csv('https://s3.amazonaws.com/assets.datacamp.com/production/course_7459/datasets/kingair_cruise.csv')
 
 `@sample_code`
-
 # filter by weight = 9500, and for -20, 0, and 20 degree temperatures
 heavy_cold = data.loc[(data["Weight"] == ----) & (data["TMP"] == ---)]
 heavy_cool = data.loc[(data["Weight"] == ----) & (data["TMP"] == ---)]
@@ -80,13 +79,6 @@ plt.legend(('ISA -20', 'ISA', 'ISA +20'))
 
 
 `@solution`
-import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-# read datafile
-data = pd.read_csv('kingair cruise.csv')
-
 # filter by weight = 9500, and for -20, 0, and 20 degree temperatures
 heavy_cold = data.loc[(data["Weight"] == 9500) & (data["TMP"] == -20)]
 heavy_cool = data.loc[(data["Weight"] == 9500) & (data["TMP"] == 0)]
