@@ -47,15 +47,14 @@ a parameter of color='black'
 -Dont forget the plt.show() command to display the plot!
 
 `@pre_exercise_code`
-
-
-`@sample_code`
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
+#import matplotlib.pyplot as plt
+#import seaborn as sns
 
 # read datafile
-data = pd.read_csv('kingair_cruise.csv')
+data = pd.read_csv('https://s3.amazonaws.com/assets.datacamp.com/production/course_7459/datasets/kingair_cruise.csv')
+
+`@sample_code`
 
 # filter by weight = 9500, and for -20, 0, and 20 degree temperatures
 heavy_cold = data.loc[(data["Weight"] == ----) & (data["TMP"] == ---)]
