@@ -105,6 +105,7 @@ plt.show()
 `@sct`
 ```{python}
 
+success_msg('Great job! You can see that performance starts decreasing around 20,000 feet for ISA temperatures')
 ```
 
 
